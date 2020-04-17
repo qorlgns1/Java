@@ -1,4 +1,4 @@
-package javastudy;
+package javastudy0417;
 
 public class Player {
 	// 이름,소속팀,연봉을 저장할 프로퍼티 생성

@@ -1,4 +1,4 @@
-package javastudy;
+package javastudy0417;
 
 public class MethodClass {
 	//Call By Value 메소드
