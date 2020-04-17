@@ -4,23 +4,23 @@ public class TaskMain {
 
 	public static void main(String[] args) {
 		
-		//TaskClass Å¬·¡½º¿¡ Á¸ÀçÇÏ´Â
-		//static int noRecuresionFibo(int n) »ç¿ë
+		//TaskClass í´ë˜ìŠ¤ì— ì¡´ì¬í•˜ëŠ”
+		//static int noRecuresionFibo(int n) ì‚¬ìš©
 		int result = TaskClass.noRecuresionFibo(9);
-		System.out.println("9¹øÂ° ¼ıÀÚ: " + result);
+		System.out.println("9ë²ˆì§¸ ìˆ«ì: " + result);
 		
 		result = TaskClass.noRecuresionFibo(10);
-		System.out.println("10¹øÂ° ¼ıÀÚ: " + result);
+		System.out.println("10ë²ˆì§¸ ìˆ«ì: " + result);
 		
 		result = TaskClass.noRecuresionFibo(11);
-		System.out.println("11¹øÂ° ¼ıÀÚ: " + result);
+		System.out.println("11ë²ˆì§¸ ìˆ«ì: " + result);
 
 		
 		TaskClass obj = new TaskClass();
 		result = obj.recursiveFibo(9);
-		System.out.println("9¹øÂ° ¼ıÀÚ: " + result);
+		System.out.println("9ë²ˆì§¸ ìˆ«ì: " + result);
 		result = obj.recursiveFibo(10);
-		System.out.println("10¹øÂ° ¼ıÀÚ: " + result);
+		System.out.println("10ë²ˆì§¸ ìˆ«ì: " + result);
 	}
 
 }

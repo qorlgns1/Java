@@ -1,11 +1,11 @@
 package javastudy;
 
 public class Player {
-	// ÀÌ¸§,¼Ò¼ÓÆÀ,¿¬ºÀÀ» ÀúÀåÇÒ ÇÁ·ÎÆÛÆ¼ »ı¼º
-	// ÀÎ½ºÅÏ½º°¡ Á÷Á¢ Çîµé¸µ ÇÒ¼ö¾øµµ·Ï privateÀ¸·Î »ı¼º
-	private String name;// ÀÌ¸§
-	private String team;// Áö¿ª
-	private int salary;// ±Ş¿©
+	// ì´ë¦„,ì†Œì†íŒ€,ì—°ë´‰ì„ ì €ì¥í•  í”„ë¡œí¼í‹° ìƒì„±
+	// ì¸ìŠ¤í„´ìŠ¤ê°€ ì§ì ‘ í—¨ë“¤ë§ í• ìˆ˜ì—†ë„ë¡ privateìœ¼ë¡œ ìƒì„±
+	private String name;// ì´ë¦„
+	private String team;// ì§€ì—­
+	private int salary;// ê¸‰ì—¬
 	
 	public String getName() {
 		return name;
@@ -39,33 +39,33 @@ public class Player {
 		Player.title = title;
 	}
 
-	// ÀüÃ¼ Á¦¸ñÀ¸·Î »ç¿ëÇÒ º¯¼ö¸¦ »ı¼º
-	// ÀüÃ¼°¡ °øÅëµÈ ÀÌ¸§À» »ç¿ëÇÏ±â ¶§¹®¿¡ static
-	// º¯°æÇÒ¼ö ¾øµµ·Ï final
+	// ì „ì²´ ì œëª©ìœ¼ë¡œ ì‚¬ìš©í•  ë³€ìˆ˜ë¥¼ ìƒì„±
+	// ì „ì²´ê°€ ê³µí†µëœ ì´ë¦„ì„ ì‚¬ìš©í•˜ê¸° ë•Œë¬¸ì— static
+	// ë³€ê²½í• ìˆ˜ ì—†ë„ë¡ final
 
-	private static String title = "ÆÀ ÀÌ¸§";
+	private static String title = "íŒ€ ì´ë¦„";
 
-	// ÇÁ·ÎÆÛÆ¼¸¦ privateÀ¸·Î ¸¸µé¾î¼­ ÀÎ½ºÅÏ½º°¡ »ç¿ëÇÒ ¼ö ¾ø±â ¶§¹®¿¡
-	// ÀÎ½ºÅÏ½º°¡ »ç¿ëÇÒ ¼ö ÀÖµµ·Ï Á¢±ÙÀÚ ¸Ş¼Òµå¸¦ »ı¼º
-	// Á¢±ÙÀÚ ¸Ş¼Òµå - getter,setter
+	// í”„ë¡œí¼í‹°ë¥¼ privateìœ¼ë¡œ ë§Œë“¤ì–´ì„œ ì¸ìŠ¤í„´ìŠ¤ê°€ ì‚¬ìš©í•  ìˆ˜ ì—†ê¸° ë•Œë¬¸ì—
+	// ì¸ìŠ¤í„´ìŠ¤ê°€ ì‚¬ìš©í•  ìˆ˜ ìˆë„ë¡ ì ‘ê·¼ì ë©”ì†Œë“œë¥¼ ìƒì„±
+	// ì ‘ê·¼ì ë©”ì†Œë“œ - getter,setter
 	
 	public void setProperty(String name, String team, int salary) {
-		//¸Ş¼ÒµåÀÇ ¸Å°³º¯¼ö°¡ name, team, salary
-		//ÇÁ·ÎÆÛÆ¼ ÀÌ¸§µµ name, team, salary
-		//¸Ş¼Òµå ¾È¿¡¼­ ¸¸µç Áö¿ªº¯¼ö°¡ ¾Æ´Ñ
-		//ÇÁ·ÎÆÛÆ¼¸¦ °¡Á®¿Ã ¶§´Â this.¸¦ ºÙ¿©¼­ °¡Á®¿À¸é µË´Ï´Ù.
-		//this¸¦ »ı·«ÇÏ¸é ¸Ş¼Òµå ¾È¿¡¼­ Ã£°í
-		//¾øÀ¸¸é ÇÁ·ÎÆÛÆ¼·Î °©´Ï´Ù.
+		//ë©”ì†Œë“œì˜ ë§¤ê°œë³€ìˆ˜ê°€ name, team, salary
+		//í”„ë¡œí¼í‹° ì´ë¦„ë„ name, team, salary
+		//ë©”ì†Œë“œ ì•ˆì—ì„œ ë§Œë“  ì§€ì—­ë³€ìˆ˜ê°€ ì•„ë‹Œ
+		//í”„ë¡œí¼í‹°ë¥¼ ê°€ì ¸ì˜¬ ë•ŒëŠ” this.ë¥¼ ë¶™ì—¬ì„œ ê°€ì ¸ì˜¤ë©´ ë©ë‹ˆë‹¤.
+		//thisë¥¼ ìƒëµí•˜ë©´ ë©”ì†Œë“œ ì•ˆì—ì„œ ì°¾ê³ 
+		//ì—†ìœ¼ë©´ í”„ë¡œí¼í‹°ë¡œ ê°‘ë‹ˆë‹¤.
 		
 		this.name = name;
 		this.team = team;
 		this.salary = salary;
 	}
-	//ÀÌ¸§°ú ¿¬ºÀ¸¸ ÀÔ·Â¹Ş°í ÆÀÀº FA·Î ¼³Á¤ÇÏ´Â ¸Ş¼Òµå
-	//À§¿¡ String, String, int¸¦ ¸Å°³º¯¼ö·Î ÇÏ´Â
-	//setProperty°¡ ÀÌ¹Ì Á¸Àç
-	//String, int¸¦ ¸Å°³º¯¼ö·Î ¹Ş´Â setProperty
-	//ÀÌ·± °æ¿ì¸¦ MethodOverloadingÀÌ¶ó°í ÇÕ´Ï´Ù.
+	//ì´ë¦„ê³¼ ì—°ë´‰ë§Œ ì…ë ¥ë°›ê³  íŒ€ì€ FAë¡œ ì„¤ì •í•˜ëŠ” ë©”ì†Œë“œ
+	//ìœ„ì— String, String, intë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ í•˜ëŠ”
+	//setPropertyê°€ ì´ë¯¸ ì¡´ì¬
+	//String, intë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ëŠ” setProperty
+	//ì´ëŸ° ê²½ìš°ë¥¼ MethodOverloadingì´ë¼ê³  í•©ë‹ˆë‹¤.
 	public void setProperty(String name, int salary) {
 		
 		this.name = name;
@@ -73,10 +73,10 @@ public class Player {
 		this.team = "FA";
 	
 	}
-	//ÀÌ¸§°ú ¼Ò¼ÓÆÀ ±×¸®°í ¿¬ºÀÀ» Ãâ·ÂÇÏ´Â ¸Ş¼Òµå
+	//ì´ë¦„ê³¼ ì†Œì†íŒ€ ê·¸ë¦¬ê³  ì—°ë´‰ì„ ì¶œë ¥í•˜ëŠ” ë©”ì†Œë“œ
 		public void display() {
-			System.out.println("ÀÌ¸§: " + name + "¼Ò¼ÓÆÀ: " + team + 
-					"¿¬ºÀ(´ÜÀ§-¸¸¿ø): " + salary		);
+			System.out.println("ì´ë¦„: " + name + "ì†Œì†íŒ€: " + team + 
+					"ì—°ë´‰(ë‹¨ìœ„-ë§Œì›): " + salary		);
 		}
 	
 }

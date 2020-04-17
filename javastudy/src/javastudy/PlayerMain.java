@@ -3,31 +3,31 @@ package javastudy;
 public class PlayerMain {
 
 	public static void main(String[] args) {
-		   //ÇÃ·¹ÀÌ¾î Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º ¸¸µé±â
+		   //í”Œë ˆì´ì–´ í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ ë§Œë“¤ê¸°
 			Player p1 = new Player ();
-			//ÇÁ·ÎÆÛÆ¼¿¡ µ¥ÀÌÅÍ ÀúÀå
-			p1.setName("ÀÓ¼ºÇö ");
-			p1.setTeam("ÀºÆò±¸");
+			//í”„ë¡œí¼í‹°ì— ë°ì´í„° ì €ì¥
+			p1.setName("ì„ì„±í˜„ ");
+			p1.setTeam("ì€í‰êµ¬");
 			p1.setSalary(20);
 			
 			
 			Player p2 = new Player ();
-			p2.setName("¹è±âÈÆ ");
-			p2.setTeam("¸¶Æ÷±¸");
+			p2.setName("ë°°ê¸°í›ˆ ");
+			p2.setTeam("ë§ˆí¬êµ¬");
 			p2.setSalary(10);
-	        //p2ÀÇ setSalay¸¦ °¡Á®¿Í¼­ 20000À» ´õÇÑ ÈÄ ´Ù½Ã ¼³Á¤
-			//°ªÀ» ¼³Á¤ÇÒ ¶§´Â set, °¡Á®¿Ã¶§´Â get			
+	        //p2ì˜ setSalayë¥¼ ê°€ì ¸ì™€ì„œ 20000ì„ ë”í•œ í›„ ë‹¤ì‹œ ì„¤ì •
+			//ê°’ì„ ì„¤ì •í•  ë•ŒëŠ” set, ê°€ì ¸ì˜¬ë•ŒëŠ” get			
 			
 			int temp = p2.getSalary();
 			p2.setSalary(temp+50000);
 			p2.display();
 			
 			Player p3 = new Player();
-			p3.setProperty("¹è¼º¹Î ", "½ÅÃÌ ", 20000);
+			p3.setProperty("ë°°ì„±ë¯¼ ", "ì‹ ì´Œ ", 20000);
 			p3.display();
 			
 			Player p4 = new Player();
-			p4.setProperty("°­ÁØÈñ ", 30000);
+			p4.setProperty("ê°•ì¤€í¬ ", 30000);
 			p4.display();
 		
 			

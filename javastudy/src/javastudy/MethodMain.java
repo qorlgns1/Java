@@ -3,21 +3,21 @@ package javastudy;
 public class MethodMain {
 
 	public static void main(String[] args) {
-		//MethodClassÀÇ
+		//MethodClassì˜
 		//static void callByValue(int)
-		//¸Þ¼Òµå¸¦ È£ÃâÇØ¼­ »ç¿ë
-		//staticÀÌ ºÙ¾î¼­ ÀÎ½ºÅÏ½º »ý¼º ÇÊ¿ä ¾øÀ½
-		//¸Å°³º¯¼ö´Â Á¤¼ö 1°³
-		//¸®ÅÏÅ¸ÀÔÀº void
+		//ë©”ì†Œë“œë¥¼ í˜¸ì¶œí•´ì„œ ì‚¬ìš©
+		//staticì´ ë¶™ì–´ì„œ ì¸ìŠ¤í„´ìŠ¤ ìƒì„± í•„ìš” ì—†ìŒ
+		//ë§¤ê°œë³€ìˆ˜ëŠ” ì •ìˆ˜ 1ê°œ
+		//ë¦¬í„´íƒ€ìž…ì€ void
 		int n =10;
 		MethodClass.callByValue(n);
-		//¿©±â¼­ n°ªÀ» º¯°æÇÏÁö¾ÊÀ¸¸é ¹«½¼ÀÏÀÌÀÖ¾îµµ ¹Ù²îÁö ¾Ê´Â´Ù.
-		//¸Þ¼Òµå ³»ºÎ¿¡¼­´Â °ªÀÌ º¯°æ°¡´ÉÇÏÁö¸¸ ¸Þ¼Òµå¹ÛÀ» ³ª¿À¸é Àý´ë·Î ¹Ù²îÁö ¾Ê´Â´Ù.
+		//ì—¬ê¸°ì„œ nê°’ì„ ë³€ê²½í•˜ì§€ì•Šìœ¼ë©´ ë¬´ìŠ¨ì¼ì´ìžˆì–´ë„ ë°”ë€Œì§€ ì•ŠëŠ”ë‹¤.
+		//ë©”ì†Œë“œ ë‚´ë¶€ì—ì„œëŠ” ê°’ì´ ë³€ê²½ê°€ëŠ¥í•˜ì§€ë§Œ ë©”ì†Œë“œë°–ì„ ë‚˜ì˜¤ë©´ ì ˆëŒ€ë¡œ ë°”ë€Œì§€ ì•ŠëŠ”ë‹¤.
 		System.out.println("n: " + n);
 		
 		int [] xr = {30,20,25};
-		//¸Þ¼Òµå¿¡°Ô ¹è¿­À» ³Ñ°ÜÁÖ¾ú½À´Ï´Ù.
-		//¹è¿­ÀÇ ³»¿ëÀÌ º¯°æµÇ¾úÀ» ¼öµµ ÀÖ½À´Ï´Ù.
+		//ë©”ì†Œë“œì—ê²Œ ë°°ì—´ì„ ë„˜ê²¨ì£¼ì—ˆìŠµë‹ˆë‹¤.
+		//ë°°ì—´ì˜ ë‚´ìš©ì´ ë³€ê²½ë˜ì—ˆì„ ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤.
 		MethodClass.callByReference(xr);
 		System.out.println("xr[0]: "+ xr[0]);
 	}

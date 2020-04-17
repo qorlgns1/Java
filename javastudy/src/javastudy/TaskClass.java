@@ -2,17 +2,17 @@ package javastudy;
 
 public class TaskClass {
 
-	// Àç±Í¸¦ ÀÌ¿ëÇÏÁö ¾Ê°í n¹øÂ° ÇÇº¸³ªÄ¡ ¼ö¿­ÀÇ °ªÀ»
-	// ¸®ÅÏÇØÁÖ´Â ¸Þ¼Òµå
+	// ìž¬ê·€ë¥¼ ì´ìš©í•˜ì§€ ì•Šê³  në²ˆì§¸ í”¼ë³´ë‚˜ì¹˜ ìˆ˜ì—´ì˜ ê°’ì„
+	// ë¦¬í„´í•´ì£¼ëŠ” ë©”ì†Œë“œ
 	public static int noRecuresionFibo(int n) {
 		if (n == 1 || n == 2) {
 			return 1;
 		} else {
-			// ÇöÀç °è»ê °ªÀÇ 2¹øÂ° ÀüÀÇ Ç×ÀÇ µ¥ÀÌÅÍ¸¦ ÀúÀåÇÒ º¯¼ö
+			// í˜„ìž¬ ê³„ì‚° ê°’ì˜ 2ë²ˆì§¸ ì „ì˜ í•­ì˜ ë°ì´í„°ë¥¼ ì €ìž¥í•  ë³€ìˆ˜
 			int f1 = 1;
-			// ÇöÀç °è»ê °ªÀÇ 2¹øÂ° ÀüÀÇ Ç×ÀÇ µ¥ÀÌÅÍ¸¦ ÀúÀåÇÒ º¯¼ö
+			// í˜„ìž¬ ê³„ì‚° ê°’ì˜ 2ë²ˆì§¸ ì „ì˜ í•­ì˜ ë°ì´í„°ë¥¼ ì €ìž¥í•  ë³€ìˆ˜
 			int f2 = 1;
-			// ÇöÀç À§Ä¡ÀÇ ÇÇº¸³ªÄ¡ ¼ö¿­ÀÇ °ª
+			// í˜„ìž¬ ìœ„ì¹˜ì˜ í”¼ë³´ë‚˜ì¹˜ ìˆ˜ì—´ì˜ ê°’
 			int fibo = -1;
 			for (int i = 3; i <= n; i++) {
 				fibo = f1 + f2;

@@ -1,14 +1,14 @@
 package javastudy;
 
 public class MethodClass {
-	//Call By Value ¸Ş¼Òµå
-	//¸Å°³º¯¼ö°¡ ±âº»ÇüÀÎ ¸Ş¼Òµå
+	//Call By Value ë©”ì†Œë“œ
+	//ë§¤ê°œë³€ìˆ˜ê°€ ê¸°ë³¸í˜•ì¸ ë©”ì†Œë“œ
 	public static void callByValue(int value) {
-		System.out.println("¸Ş¼Òµå ³»ÀÇ value: " + value);
+		System.out.println("ë©”ì†Œë“œ ë‚´ì˜ value: " + value);
 		value = value + 1;
-		System.out.println("¸Ş¼Òµå ³»ÀÇ value: " + value);
+		System.out.println("ë©”ì†Œë“œ ë‚´ì˜ value: " + value);
 	}
-	//¸Å°³º¯¼ö°¡ ÂüÁ¶ÇüÀÎ ¸Ş¼Òµå:Call By Reference
+	//ë§¤ê°œë³€ìˆ˜ê°€ ì°¸ì¡°í˜•ì¸ ë©”ì†Œë“œ:Call By Reference
 	public static void callByReference(int [] ar) {
 		System.out.println("ar[0]: " + ar[0]);
 		ar[0] = ar[0] +1;
