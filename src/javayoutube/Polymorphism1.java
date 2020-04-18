@@ -1,8 +1,8 @@
 package javayoutube;
 
-class A{
-	public String x() {return "A.x";}
-}
+//class A{
+//	public String x() {return "A.x";}
+//}
 class B extends A{
 	public String x() {return "B.x";}
 	public String y() {return "y";}
