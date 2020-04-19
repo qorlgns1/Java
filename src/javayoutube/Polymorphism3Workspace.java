@@ -12,7 +12,7 @@ class Steve implements father, programmer, believer{
 	}
 }
 
-class Rechel implements mather, programmer{
+class Rechel implements mather, p    rogrammer{
 	public void coding() {
 		System.out.println("elegance");
 	}
