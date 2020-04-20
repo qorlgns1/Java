@@ -1,3 +1,5 @@
+package javastudy0417;
+
 import java.util.Scanner;
 
 public class Practice {
