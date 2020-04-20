@@ -1,7 +1,8 @@
 package inheritance5polymorphism;
 
-public class Terran {
-	public void 공격() {
+public class Terran extends Starcraft {
+	public void attack() {
 		System.out.println("테란의 공격");
 
+}
 }
