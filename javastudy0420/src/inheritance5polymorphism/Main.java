@@ -15,6 +15,7 @@ public class Main {
 		star = new Terran();
 		star.attack();
 		
+		
 	}
 
 }
