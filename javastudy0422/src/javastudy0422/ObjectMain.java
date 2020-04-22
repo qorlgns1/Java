@@ -52,7 +52,7 @@ public class ObjectMain {
 		Object obj = str;
 		//사용을 할 때는 원래의 자료형으로 강제 형 변환해서 사용
 		System.out.println(((String) obj).toUpperCase());
-
+		//끝
 	}
 }
 
