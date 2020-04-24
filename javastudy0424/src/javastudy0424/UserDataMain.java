@@ -29,7 +29,7 @@ public class UserDataMain {
 		//Comparable 인터페이스가 implements 되지 않아서
 		//크기 비교하는 방법을 알지 못하기 때문입니다.
 		//ex )            Arrays.sort(ar);
-		
+		//방법1
 		Comparator<UserData> comp1 = new Comparator() {
 
 			@Override
@@ -40,8 +40,19 @@ public class UserDataMain {
 			}
 			
 		};
-		
 		Arrays.sort(ar, comp1);
+		
+		//방법2
+//		Arrays.sort(ar, new Comparator<UserData>() {
+//
+//			@Override
+//			public int compare(UserData a1, UserData a2) {
+//				UserData a3 = (UserData)a1;
+//				UserData a4 = (UserData)a2;
+//				return a3.getName().compareTo(a4.getName());
+//			}
+//			
+//		});
 		
 		
 		//배열의 데이터 전부 출력
