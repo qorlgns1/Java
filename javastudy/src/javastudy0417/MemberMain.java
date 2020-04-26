@@ -21,6 +21,9 @@ public class MemberMain {
 //		m3.getId();
 //		m3.getPw();css
 		System.out.println(m3.getId());
+		
+		
+		public int nextInt(3);
 	}
 
 }
